@@ -62,9 +62,9 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var val1 = Object.keys(cart[i])[0]
-  var valItem = cart[i][val1]
  for(let i = 0; i < cart.length; i++){
+    var val1 = Object.keys(cart[i])[0]
+    var valItem = cart[i][val1]
     if (valItem === item){
         cart.splice(val1, 1)
         return cart
