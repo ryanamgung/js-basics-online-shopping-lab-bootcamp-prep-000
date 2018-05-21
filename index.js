@@ -35,7 +35,7 @@ function viewCart() {
     var price = cart[i][val2]
     var item = cart[i][val1]
     
-    if(i === len - 1 && i != 0)
+    if(i === len - 1 && i !== 0)
     {
       print.push(`and ${item} at $${price}`)
     }else
