@@ -70,9 +70,10 @@ function removeFromCart(item) {
     var itemName = cart[i][val1]
     if(itemName === item)
     {
-      cart.slice(itemName, )
+      cart.slice(itemName, 1)
     }
   }
+  return cart
 }
 
 function placeOrder(cardNumber) {
