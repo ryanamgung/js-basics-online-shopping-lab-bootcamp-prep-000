@@ -66,7 +66,7 @@ function removeFromCart(item) {
     var val1 = Object.keys(cart[i])[0]
     var valItem = cart[i][val1]
     if (valItem === item){
-        delete cart[getCart(i)[1]]
+        splice(val1, 1)
         return cart
     }
   }
