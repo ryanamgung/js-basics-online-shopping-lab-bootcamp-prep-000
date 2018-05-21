@@ -65,12 +65,10 @@ function removeFromCart(item) {
   for(let i = 0; i < cart.length; i++)
   {
     var val1 = Object.keys(cart[i])[0]
-    var val2 = Object.keys(cart[i])[1]
-    var price = cart[i][val2]
     var itemName = cart[i][val1]
     if(itemName === item)
     {
-      cart.slice(itemName, 1)
+      cart.splice(itemName, 1)
     }
   }
   return cart
