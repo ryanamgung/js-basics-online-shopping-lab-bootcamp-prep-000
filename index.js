@@ -70,6 +70,10 @@ function removeFromCart(item) {
     {
       delete cart[val1]
     }
+    if(i === cart.length - 1)
+    {
+      return `That item is not in your cart.`
+    }
   }
   return cart
 }
