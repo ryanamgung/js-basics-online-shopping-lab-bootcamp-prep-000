@@ -68,25 +68,12 @@ function removeFromCart(item) {
         cart.splice(i, 1)
         return cart
     }
-    if()
-   }
-
-  console.log (`That item is not in your cart.`)
-  return cart 
-  
-  for(let i = 0; i < cart.length; i++)
-  {
-    var val1 = Object.keys(cart[i])[0]
-    var itemName = cart[i][val1]
-    if(itemName === item)
-    {
-      delete cart[val1]
-    }
     if(i === cart.length - 1)
     {
       return `That item is not in your cart.`
     }
   }
+   
   return cart
 }
 
